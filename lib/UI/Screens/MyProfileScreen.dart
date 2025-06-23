@@ -102,7 +102,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>settingsScreen()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>settingsScreen(pickedImage:widget.pickedImage , supabase:widget.supabase, userData: widget.userData,)));
                         },
                         icon: const Icon(
                           Icons.menu,
